@@ -770,25 +770,25 @@ body { animation: fadeIn 1.2s; }
 
 @font-face {
     font-family: "Monsterrat";
-    src: url(font/Montserrat-Light.otf)
+    src: url(Font/Montserrat-Light.otf)
 
 }
 
 @font-face {
     font-family: "Monsterrat-Bold/Itallic";
-    src: url(font/Montserrat-ExtraBoldItalic.otf)
+    src: url(Font/Montserrat-ExtraBoldItalic.otf)
 
 }
 
 @font-face {
     font-family: "Monsterrat-ExtraBold";
-    src: url(font/Montserrat-ExtraBold.otf)
+    src: url(Font/Montserrat-ExtraBold.otf)
 
 }
 
 @font-face {
     font-family: "Monsterrat-Bold";
-    src: url(font/Montserrat-Bold.otf)
+    src: url(Font/Montserrat-Bold.otf)
 
 }
 
