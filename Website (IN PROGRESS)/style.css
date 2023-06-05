@@ -1,0 +1,794 @@
+body {
+    font-family: "Monsterrat";
+    text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 25%, rgba(0,159,253,1) 38%, rgba(42,42,114,1) 100%); 
+}
+
+.Menu {
+    list-style: none;
+
+}
+
+.Menu li {
+    display: inline-block;
+}
+
+.Menu-Item{
+    color: white;
+}
+
+    a:visited {
+    color: white;
+}
+
+.footer {
+    background-color: #5A5A5A;
+
+}
+
+.material-symbols-outlined:hover {
+    filter: brightness(0) invert(1);  
+    cursor: pointer;
+    
+}
+
+.material-symbols-outlined a:visited {
+    color: black;
+}
+
+.Names input {
+    border: solid black;    
+   }
+
+body { animation: fadeIn 1.2s; }
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+.Banner-Text {
+    color: white;
+}
+
+
+/* MOBILE DEVICES*/
+@media screen and (max-width: 500px) {
+
+    .logo{
+        margin-top: 5%;
+        
+    }
+
+    .Banner-Text {
+        font-family: "Monsterrat-Bold";
+        padding-top: 20%;
+
+    }
+
+    .Banner {
+        padding-top: 100px;
+        padding-bottom: 140px;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("Images/Banner\(Mobile\).jpg");
+        border-radius: 5em;
+     }
+
+     .Banner-Image {
+        display: none;
+     }
+
+    .HMS-Bio{
+        background-color: white;
+        color: white;
+        font-family: "Monsterrat-Bold";
+        border-radius: 1em;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        background: linear-gradient(#090979,#00d4ff);
+        padding-bottom: 2%;
+    }
+
+    .Phone-Number {
+        font-size: small;
+        font-family: "Monsterrat-ExtraBold";
+        background: white;
+        color: black;
+        border-radius: 4em;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        width: 75%;
+        margin: auto;
+        margin-top: 6%;
+
+     }
+
+    .navbar-brand{
+        display: none;
+    }
+
+    .Menu2 {
+        position: fixed;
+        transform: translateY(-110%);
+        transition: transform 0.2s;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 50%;
+        z-index: 99;
+        background: #5A5A5A;
+        color: white;
+        list-style: none;
+        padding-top: 4rem;
+    }
+
+    .Menu li {
+        display: flex;
+        flex-direction: column;
+        line-height: 2em;
+        text-align: left;
+        font-family: "Monsterrat-ExtraBold";
+    }
+
+    .showMenu2 {
+        transform: translateY(0);
+      }
+
+
+    .hamburger {
+        position: fixed;
+        z-index: 100;
+        top: 1rem;
+        right: 0rem;
+        padding: 4px;
+        border: black solid 1px;
+        background: linear-gradient(#2E3192,#1BFFFF);
+        cursor: pointer;
+
+    }
+
+    
+
+    .closeIcon {
+        display: none;
+    }
+
+    .footer {
+        font-size: small;
+        font-family: "Monsterrat-Bold";
+        border-radius: 1em;
+        padding: 2%;
+    }
+
+    .Main-Content-Home {
+        background-color: white;
+        margin-bottom: 5%;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        border-radius: 1em;
+        font-family: "Monsterrat-Bold";
+
+    }
+
+
+    .img-1 {
+        width: 20em;
+        height: 10em;
+        border-radius: 3em;
+        margin: auto;
+    }
+
+    .img-2 {
+        width: 20em;
+        height: 10em;
+        border-radius: 3em;
+        margin: auto;
+    }
+
+    .img-3 {
+        width: 20em;
+        height: 10em;
+        border-radius: 3em;
+        margin: auto;
+    }
+    .img-4 {
+        width: 20em;
+        height: 10em;
+        border-radius: 3em;
+        margin: auto;
+    }
+
+   .Main-Text {
+    margin-left: 13%;
+    margin-right: 13%;
+    line-height: 1.8em;
+    font-size: large;
+    text-align: left;
+    font-family: "Monsterrat";
+    padding-bottom: 6%;
+    padding-top: 5%;
+   }
+
+
+   .Form-Flex {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+
+   }
+
+   .Form-Flex button{
+    border-radius: 0.5em;
+    height: 3em;
+    margin-right: 25%;
+    margin-left: 25%;
+    font-family: "Monsterrat-Bold";
+    font-size: large;
+    margin-top: 2%;
+   }
+
+   .Form-Flex input{
+    border-radius: 0.2em;
+    height: 1.2em;
+    font-family: "Monsterrat";
+    font-size: large;
+   }
+
+   .Form-Flex input[type="text"]{
+    padding-left: 2%;
+   }
+
+   .form {
+    background-color: #74d4de;
+    margin-right: 0em;
+    margin-top: 4%;
+    padding: 3em;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+   }
+   
+
+}
+
+
+/* TABLET */
+@media screen and (min-width: 501px) {
+
+    .Banner-Text {
+        position: relative;
+        right: 50%;
+        background-color: #00658C;
+        height: 17em;
+        width: 50%;
+        font-family: "Monsterrat-Bold";
+        font-size: small;
+        padding: 3em;
+        padding-left: 50%;
+        line-height: 2.5em;
+        border-radius: 2em;
+    
+     }
+
+     .Banner-Image {
+        padding-top: 2%;
+        width: 9em;
+     }
+
+    .Banner {
+        padding-top: 150px;
+        padding-bottom: 300px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("Images/Banner\(Tablet\).jpg");
+     }
+
+    .welcome{
+        font-size: xx-large;
+    }   
+
+    body {
+        font-size: small;
+    }
+
+    * {
+        margin: 0;
+        padding: 0; 
+        border: 0;
+        list-style: none;
+        text-decoration: none;
+     }
+
+    nav {
+        display: flex;
+        justify-content: space-between; 
+        padding: 0 15%;
+        height: 75px;
+        line-height: 75px;
+        background-color: #5A5A5A;
+     }
+ 
+     nav .navbar-brand {
+         color: white;
+         font-size: xx-large;
+         font-family: "Monsterrat-Bold/Itallic";
+         letter-spacing: .3px;
+
+     }
+ 
+     nav .Menu {
+         display: flex;
+     }
+ 
+     nav .Menu .Menu-Item {
+         cursor: pointer;
+         height: 100%;
+         padding: 0 20px;
+         padding-left: 5%;
+         transition: .4s;
+         font-size: small;
+     }
+
+     nav .Menu .Menu-Item:hover {
+        background-color:  #1bffff;
+     }
+
+     .hamburger {
+        display: none;
+     }
+
+     .Phone-Number {
+        font-size: xx-large;
+        font-family: "Monsterrat-ExtraBold";
+        background: white;
+        color: black;
+        border-radius: 4em;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        width: 75%;
+        margin: auto;
+        margin-top: 6%;
+
+     }
+
+     .logo {
+        padding-top: 5%;
+        padding-bottom: 3%;
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+     }
+
+
+     .HMS-Bio {
+        max-width: 60em;
+        min-width: 0;
+        margin: auto;
+        min-height: 15em;
+        border: none;
+        border-radius: 25px;
+        background: linear-gradient(#090979,#00d4ff);
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        color: white;
+        font-family: "Monsterrat-Bold";
+        clear: left;
+        overflow: auto;
+        padding-bottom: 3%;
+     }
+    
+     .HMS-Bio h1 {
+        padding-top: 2%;
+     }
+
+     .HMS-Bio p {
+        margin-left: 25%;
+        margin-right: 25%;
+        font-size: 1.2em;
+        padding-top: 2%;
+     }
+
+     .footer {
+        height: 8em;
+    
+    }
+
+    .Copy {
+        padding: 2em;
+        line-height: 2em;
+    
+    }
+
+
+    .Main-Content-Home {
+        background-color: white;
+        margin-top: 3%;
+        border-radius: 6em;
+        margin-bottom: 5%;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    }
+
+    .Main-Content-Home .Header-Main{
+        color: black;
+        font-family: "Monsterrat-Bold";
+        padding-top: 2%;
+    }
+
+    .Main-Text {
+        margin-left: 12%;
+        margin-right: 10%;
+        font-size: xx-large;
+        text-align: left;
+        padding-bottom: 10%;
+        line-height: 2em;
+       }
+
+    .Home-Images {
+        padding-top: 2%;
+        padding-bottom: 2%;
+           
+    }
+
+    .img-1 {
+        width: 40em;
+        height: 30em;
+        border-radius: 3em;
+        margin: auto;
+    }
+
+    .img-2 {
+        width: 40em;
+        height: 30em;
+        border-radius: 3em;
+        margin: auto;
+    }
+
+    .img-3 {
+        width: 40em;
+        height: 30em;
+        border-radius: 3em;
+        margin: auto;
+    }
+    .img-4 {
+        width: 40em;
+        height: 30em;
+        border-radius: 3em;
+        margin: auto;
+    }
+
+    .fade {
+        animation-name: fade;
+        animation-duration: 2s;
+      }
+      @keyframes fade {
+        from {opacity: .5}
+        to {opacity: 1}
+      }
+
+      .Form-Flex {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+
+       }
+
+       .Form-Flex button{
+        border-radius: 0.5em;
+        height: 3em;
+        margin-right: 25%;
+        margin-left: 25%;
+        font-family: "Monsterrat-Bold";
+        font-size: large;
+        margin-top: 2%;
+       }
+
+       .Form-Flex input{
+        border-radius: 1em;
+        height: 3em;
+        font-family: "Monsterrat";
+        font-size: large;
+       }
+
+       .Form-Flex input[type="text"]{
+        padding-left: 2%;
+       }
+
+       .form {
+        background-color: #74d4de;
+        border-radius: 3em;
+        margin-top: 4%;
+        padding: 3em;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+       }
+       
+
+
+
+    
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1191px) {
+
+    .Banner {
+        padding-top: 150px;
+        padding-bottom: 750px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("Images/Banner.JPG");
+     }
+    
+    * {
+        margin: 0;
+        padding: 0; 
+        border: 0;
+        list-style: none;
+        text-decoration: none;
+     }
+
+    nav {
+        display: flex;
+        justify-content: space-between; 
+        padding: 0 15%;
+        height: 75px;
+        line-height: 75px;
+        background-color: #5A5A5A;
+        list-style: none;
+        text-decoration: none;
+     }
+ 
+     nav .navbar-brand {
+        color: white;
+        font-size: x-large;
+        font-family: "Monsterrat-Bold/Itallic";
+        letter-spacing: .3px;
+        text-decoration: none;
+       
+     }
+ 
+     nav .Menu {
+         display: flex;
+     }
+ 
+     nav .Menu .Menu-Item {
+         cursor: pointer;
+         height: 100%;
+         padding: 0 30px;
+         transition: .2s;
+         font-size: large;
+         font-family: "Monsterrat-ExtraBold";
+
+     }
+
+     nav .Menu .Menu-Item:hover {
+        background-color: #1bffff;
+     }
+
+     .Banner {
+        color: white;
+     }
+
+     .Banner-Text {
+        position: relative;
+        right: 40%;
+        background-color: #00658C;
+        height: 6em;
+        width: 76%;
+        font-family: "Monsterrat-Bold";
+        font-size: large;
+        padding: 3em;
+        padding-left: 20%;
+        line-height: 2.5em;
+        border-radius: 2em;
+     }
+
+     .Banner-Image {
+        position: relative;
+        left: 22.5em;
+        bottom: 11em;
+        width: 10em;
+     }
+     
+     .Phone-Number {
+        font-size: xx-large;
+        font-family: "Monsterrat-ExtraBold";
+        background: white;
+        color: black;
+        border-radius: 4em;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        width: 75%;
+        margin: auto;
+        margin-top: 6%;
+
+     }
+
+     .logo {
+        padding-top: 5%;
+        padding-bottom: 3%;
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+     }
+
+
+     .HMS-Bio {
+        max-width: 60em;
+        min-width: 0;
+        margin: auto;
+        min-height: 15em;
+        border: none;
+        border-radius: 25px;
+        background: linear-gradient(#090979,#00d4ff);
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        color: white;
+        font-family: "Monsterrat-Bold";
+        clear: left;
+        overflow: auto;
+        padding-bottom: 3%;
+        font-size: large;
+     }
+
+
+    
+     .HMS-Bio h1 {
+        padding-top: 2%;
+     }
+
+     .HMS-Bio p {
+        margin-left: 25%;
+        margin-right: 25%;
+        font-size: 1.2em;
+        padding-top: 2%;
+     }
+
+     .footer {
+        height: 8em;
+        font-size: large;
+    
+    }
+
+    .Copy {
+        padding: 2em;
+        line-height: 2em;
+    
+    }
+
+
+    .Main-Content-Home {
+        background-color: white;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 3%;
+        border-radius: 7em;
+        margin-bottom: 5%;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        font-size: large;
+    }
+
+    
+
+    .Main-Content-Home .Header-Main{
+        color: black;
+        font-family: "Monsterrat-Bold";
+        padding-top: 2%;
+    }
+
+    .Home-Images {
+        padding-top: 2%;
+        padding-bottom: 2%;
+        
+        
+    }
+
+    .img-1 {
+        width: 50em;
+        height: 30em;
+        border-radius: 3em;
+        margin: auto;
+    }
+
+    .img-2 {
+        width: 50em;
+        height: 30em;
+        border-radius: 3em;
+        margin: auto;
+    }
+
+    .img-3 {
+        width: 50em;
+        height: 30em;
+        border-radius: 3em;
+        margin: auto;
+    }
+    .img-4 {
+        width: 50em;
+        height: 30em;
+        border-radius: 3em;
+        margin: auto;
+    }
+
+    .fade {
+        animation-name: fade;
+        animation-duration: 2s;
+      }
+      @keyframes fade {
+        from {opacity: .5}
+        to {opacity: 1}
+      }
+
+
+      .Main-Text {
+        margin-left: 24%;
+        margin-right: 20%;
+        font-size: xx-large;
+        text-align: left;
+        padding-bottom: 10%;
+        line-height: 2em;
+       }
+
+       .Form-Flex {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+
+       }
+
+       .Form-Flex button{
+        border-radius: 0.5em;
+        height: 3em;
+        margin-right: 25%;
+        margin-left: 25%;
+        font-family: "Monsterrat-Bold";
+        font-size: large;
+        margin-top: 2%;
+       }
+
+       .Form-Flex button:hover {
+        background-color: #D3D3D3;
+       }
+
+       .Form-Flex input{
+        border-radius: 1em;
+        height: 3em;
+        font-family: "Monsterrat";
+        font-size: large;
+       }
+
+       .Form-Flex input[type="text"]{
+        padding-left: 2%;
+       }
+
+       .form {
+        background-color: #74d4de;
+        border-radius: 3em;
+        margin-top: 4%;
+        padding: 3em;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        margin-bottom: 2%;
+       }
+       
+}
+
+@font-face {
+    font-family: "Monsterrat";
+    src: url(font/Montserrat-Light.otf)
+
+}
+
+@font-face {
+    font-family: "Monsterrat-Bold/Itallic";
+    src: url(font/Montserrat-ExtraBoldItalic.otf)
+
+}
+
+@font-face {
+    font-family: "Monsterrat-ExtraBold";
+    src: url(font/Montserrat-ExtraBold.otf)
+
+}
+
+@font-face {
+    font-family: "Monsterrat-Bold";
+    src: url(font/Montserrat-Bold.otf)
+
+}
+
