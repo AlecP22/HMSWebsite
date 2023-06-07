@@ -55,6 +55,10 @@ body { animation: fadeIn 1.2s; }
     color: white;
 }
 
+a {
+    color: white;
+}
+
 
 /* MOBILE DEVICES*/
 @media screen and (max-width: 500px) {
@@ -124,6 +128,14 @@ body { animation: fadeIn 1.2s; }
         color: white;
         list-style: none;
         padding-top: 4rem;
+    }
+
+    .menuIcon {
+        color: black;
+    }
+
+    .Menu2 a {
+        color: white;
     }
 
     .Menu li {
@@ -228,6 +240,7 @@ body { animation: fadeIn 1.2s; }
     font-family: "Monsterrat-Bold";
     font-size: large;
     margin-top: 2%;
+    background-color: grey;
    }
 
    .Form-Flex input{
